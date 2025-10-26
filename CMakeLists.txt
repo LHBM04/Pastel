@@ -17,8 +17,9 @@ find_package(OpenAL        CONFIG REQUIRED)
 find_package(spdlog        CONFIG REQUIRED)
 
 add_library(Pastel STATIC
-    Sources/Test.cpp
-    Sources/Test.h
+    Sources/Window.cpp
+    Sources/Window.hpp
+    Sources/WindowSpecification.hpp
 )
 
 target_link_libraries(Pastel PRIVATE assimp::assimp)
